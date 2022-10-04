@@ -15,41 +15,41 @@ print(animais)
 print("-------------------------------------------------")
 
 #Imprimindo o primeiro elemento da lista
-animais[0]
+print(animais[0])
 print("-------------------------------------------------")
 
 #Imprimindo o 4 elemento da lista
-animais[3]
+print(animais[3])
 print("-------------------------------------------------")
 
 #Substituindo o primeiro elemento da lista
 animais[0] = "papagaio"
-animais
+print(animais)
 print("-------------------------------------------------")
 
 #Removendo gato da lista
 animais.remove("gato")
-animais
+print(animais)
 print("-------------------------------------------------")
 
 len(animais)
 "gato" in animais
 lista = [500, 30, 300, 80, 10]
-max(lista)
-min(lista)
+print("MAX: " + str(max(lista)))
+print(min(lista))
 print("-------------------------------------------------")
 
 animais.append(["leão", "Cachorro"])
-animais
+print(animais)
 print("-------------------------------------------------")
 
 animais.extend(["cobra", 6])
-animais
+print(animais)
 print("-------------------------------------------------")
 
 animais.count("leão")
 lista.sort()
-lista
+print(lista)
 print("-------------------------------------------------")
 
 # **Tuplas**
@@ -57,20 +57,20 @@ print("-------------------------------------------------")
 #As tuplas usam parênteses como sintaxe
 tp = ("Banana", "Maçã", 10, 50)
 #Retornando o primeiro elemento
-tp[0]
+print(tp[0])
 print("-------------------------------------------------")
 
 #Diferente das listas as tuplas são imutáveis, o que quer dizer que não podemos alterar os seus elementos
-tp[0] = "Laranja"
+# tp[0] = "Laranja"  -> Dá erro se retirar o comentário.
 tp.count("Maçã")
-tp[0:2]
+print(tp[0:2])
 print("-------------------------------------------------")
 
 # **Dicionários**
 
 #Para criar um dicionário utilizamos as {}
 dc = {"Maçã":20, "Banana":10, "Laranja":15, "Uva":5} #Dicionários trabalham com o condeito chave e valor
-dc
+print(dc)
 print("-------------------------------------------------")
 
 #Acessando o valor de um dicionário através da chave

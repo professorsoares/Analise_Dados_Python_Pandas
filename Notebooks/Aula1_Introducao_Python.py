@@ -7,9 +7,13 @@ print(1 + 1)
 #Multiplicação
 print(2 * 2)
 #Divisão
+
+a=4
+b=5
+
 print(10/2)
-print(a = 4)
-print(b = 6)
+print(a == 4)
+print(b == 6)
 print(a + b)
 #Criando uma variável do tipo string
 frase = "Python para análise de dados"
@@ -19,6 +23,6 @@ print(frase[10:])
 print(frase[:17])
 print(frase.count("dados"))
 print(frase.lower())
-print(frase = frase.upper())
+print(frase == frase.upper())
 print(frase.replace("Python","Frases"))
 print(frase)

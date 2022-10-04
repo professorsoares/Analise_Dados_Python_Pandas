@@ -1,22 +1,32 @@
 # **Python para análise de dados(Pandas)** - *Fernanda Santos* 3 
 #importando a biblioteca pandas
 import pandas as pd
-df = pd.read_csv("/content/drive/My Drive/Datasets/Gapminder.csv",error_bad_lines=False, sep=";")
+# df = pd.read_csv("/content/drive/My Drive/Datasets/Gapminder.csv",error_bad_lines=False, sep=";")
+df = pd.read_csv("../datasets/Gapminder.csv",error_bad_lines=False, sep=";")
 #Visualizando as 5 primeiras linhas
-df.head()
+print(df.head())
 df = df.rename(columns={"country":"Pais", "continent": "continente", "year":"Ano", "lifeExp":"Expectativa de vida", "pop":"Pop Total", "gdpPercap": "PIB"})
-df.head(10)
+print(df.head(10))
 #Total de linhas e colunas
-df.shape
-df.columns
-df.dtypes
+print("\ndf.shape")
+print(df.shape)
+print("\ndf.columns")
+print(df.columns)
+print("\ndf.dtypes")
+print(df.dtypes)
 df.tail(15)
-df.describe()
-df["continente"].unique()
+print("\ndf.describe()")
+print(df.describe())
+
+print("df['continente'].unique()")
+print(df["continente"].unique())
+
 Oceania = df.loc[df["continente"] == "Oceania"]
 Oceania.head()
 Oceania["continente"].unique()
 df.groupby("continente")["Pais"].nunique()
 df.groupby("Ano")["Expectativa de vida"].mean()
 df["PIB"].mean()
-df["PIB"].sum()
+
+print('\ndf["PIB"].sum()')
+print(df["PIB"].sum())
